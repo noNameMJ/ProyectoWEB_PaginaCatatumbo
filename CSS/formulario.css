@@ -1,0 +1,42 @@
+/* Estilos para el formulario en la página de Mi Tienda */
+#inicio-sesion-form, #registro-form {
+    max-width: auto; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar el formulario en la página */
+    padding: 20px;
+    background-color: #fff; /* Color de fondo del formulario */
+    border: 2px solid #ccc;
+    border-radius: 10px; 
+}
+
+#inicio-sesion-form h2, #registro-form h2 {
+    text-align: center; /* Centrar el título del formulario */
+}
+
+#inicio-sesion-form label, #registro-form label {
+    margin-bottom: 10px;
+}
+
+#inicio-sesion-form input, #registro-form input {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center; /* Centra el contenido dentro del input */
+}
+
+#inicio-sesion-form button, #registro-form button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+    background-color: #333; /* Color de fondo del botón */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#inicio-sesion-form button:hover, #registro-form button:hover {
+    background-color: #555; /* Cambiar el color de fondo al pasar el cursor sobre el botón */
+}
