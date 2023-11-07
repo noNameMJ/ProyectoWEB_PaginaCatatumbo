@@ -6,7 +6,6 @@
     width: 100%;    
 }
 
-
 .producto {
     width: calc(20% - 20px); 
     margin: auto;
@@ -16,6 +15,53 @@
     border-radius: 10px;
     text-align: center;
     
+}
+
+/* Estilos para la sub barra de navegación */
+.sub-navbar {
+    display: flex;
+    padding: 10px 15px;
+    background-color: #ffffff; /* Fondo blanco */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    position: relative; /* Cambio a posición relativa */
+}
+
+.sub-navbar ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.sub-navbar li {
+    display: inline;
+    margin-right: 20px; /* Espacio entre elementos de la sub barra */
+}
+
+.sub-navbar a {
+    text-decoration: none;
+    color: #000000; /* Color del texto de las categorías */
+    font-weight: bold;
+}
+
+.search-bar {
+    text-align: right; /* Centrar el contenido */
+    margin-left: auto;
+
+}
+
+.search-bar input {
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #470063;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
 }
 
 @media (max-width: 800px) {

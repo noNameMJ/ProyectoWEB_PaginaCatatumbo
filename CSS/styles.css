@@ -1,18 +1,18 @@
 /* Estilos básicos para el navbar */
 nav {
-    background-color: #333;
-    color: #fff;
-    position: fixed; 
-    padding: 10px 0;
+    background-color: #470063;
+    color: #ffffff;
+    position: relative; 
+    padding: 10px;
     top: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    text-align: center;
+    text-align: justify;
 }
 
 nav ul li {
@@ -22,7 +22,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -36,11 +36,11 @@ main {
 
 /* Estilos para el pie de página */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #470063;
+    color: #ffffff;
     text-align: center;
     padding: 10px 0;
-    position: fixed; 
+    position: relative; 
     left: 0;
     bottom: 0;
     width: 100%; 

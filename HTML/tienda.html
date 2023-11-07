@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo</title>
+    <title>Tienda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../CSS/styles.css">
     <link rel="stylesheet" href="../CSS/catalogo.css">
 </head>
@@ -12,13 +15,28 @@
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="catalogo.html">Catálogo</a></li>
-                <li><a href="mi-cuenta.html">Mi Cuenta</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="mi-cuenta.html"><i class="fas fa-user"></i></a></li>
             </ul>
+              
         </nav>
+        
+            <ul class="sub-navbar">
+                <li><a>Arte</a></li>
+                <li><a>Artesanía</a></li>
+                <li><a>Gastronomía</a></li>
+                <li><a>Med. Tradicional</a></li>
+                <li class="search-bar">
+                    <input type="text" id="search-input" placeholder="Buscar...">
+                    <button id="search-button" class="search-icon"><i class="fas fa-search"></i></button>
+                </li>
+                
+            </ul>
+        
+              
     </header>
     <main>
-        <h1>Catálogo de Productos</h1>
+        <h1>Lo más comprado</h1>
         <div class="productos-grid">
             <div class="producto">
                 <img src="../MEDIA/PlaceholderLC.png" alt="Producto 1">
