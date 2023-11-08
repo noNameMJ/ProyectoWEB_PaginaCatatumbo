@@ -16,7 +16,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;
+    display: inline;
     margin-right: 20px;
 }
 
@@ -24,6 +24,11 @@ nav ul li a {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
+}
+
+#cuenta {
+    text-align: left;
+    margin-left: auto;
 }
 
 /* Estilos para el contenido principal */
