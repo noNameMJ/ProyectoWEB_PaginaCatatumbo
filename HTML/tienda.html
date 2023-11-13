@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
@@ -12,82 +13,83 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
-                <li><a href="cultura.html">Cultura</a></li>
-                <li><a href="about-us.html">Sobre Nosotros</a></li>
-                <li><a id="cuenta" href="mi-cuenta.html"><i class="fas fa-user"></i></a></li>
+        <nav class="navbar navbar-expand-lg">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="../index.html" class="navbar-brand"><img src="../MEDIA/logo.png"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="tienda.html" class="nav-link active">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cultura.html" class="nav-link active">Cultura</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about-us.html" class="nav-link active">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mi-cuenta.html"><i class="fas fa-user"></i></a>
+                </li>
             </ul>
         </nav>
         
-            <ul class="sub-navbar">
-                <li><a>Arte</a></li>
-                <li><a>Artesanía</a></li>
-                <li><a>Gastronomía</a></li>
-                <li><a>Med. Tradicional</a></li>
-                <li class="search-bar">
-                    <input type="text" id="search-input" placeholder="Buscar...">
-                    <button id="search-button" class="search-icon"><i class="fas fa-search"></i></button>
-                </li>
-                
-            </ul>
-        
-              
+        <ul class="sub-navbar">
+            <li class="nav-item">
+                <a class="nav-link" href="tienda-arte.html">Arte</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tienda-artesania.html">Artesanía</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tienda-gastronomia.html">Gastronomía</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tienda-medicina.html">Medicina Tradicional</a>
+            </li>
+            <li class="search-bar">
+                <input type="text" id="search-input" placeholder="Buscar...">
+                <button id="search-button" class="search-icon"><i class="fas fa-search"></i></button>
+            </li>
+        </ul>
     </header>
     <main>
-        <h1>Lo más comprado</h1>
-        <div class="productos-grid">
-            <div class="producto">
-                <img src="../MEDIA/PlaceholderLC.png" alt="Producto 1">
-                <h2>Producto 1</h2>
-                <p>Descripción del Producto 1.</p>
-            </div>
-            <div class="producto">
-                <img src="../MEDIA/PlaceholderLC.png" alt="Producto 2">
-                <h2>Producto 2</h2>
-                <p>Descripción del Producto 2.</p>
-            </div>
-            <div class="producto">
-                <img src="../MEDIA/PlaceholderLC.png" alt="Producto 3">
-                <h2>Producto 3</h2>
-                <p>Descripción del Producto 3.</p>
-            </div>
-            <div class="producto">
-                <img src="../MEDIA/PlaceholderLC.png" alt="Producto 4">
-                <h2>Producto 4</h2>
-                <p>Descripción del Producto 4.</p>
-            </div>
-            <div class="producto">
-                <img src="../MEDIA/PlaceholderLC.png" alt="Producto 5">
-                <h2>Producto 5</h2>
-                <p>Descripción del Producto 5.</p>
-            </div>
-            <div class="producto">
-                <img src="../MEDIA/PlaceholderLC.png" alt="Producto 5">
-                <h2>Producto 6</h2>
-                <p>Descripción del Producto 6.</p>
-            </div>
-            <div class="producto">
-                <img src="../MEDIA/PlaceholderLC.png" alt="Producto 5">
-                <h2>Producto 7</h2>
-                <p>Descripción del Producto 7.</p>
-            </div>
-            <div class="producto">
-                <img src="../MEDIA/PlaceholderLC.png" alt="Producto 5">
-                <h2>Producto 8</h2>
-                <p>Descripción del Producto 8.</p>
-            </div>
-            <div class="producto">
-                <img src="../MEDIA/PlaceholderLC.png" alt="Producto 5">
-                <h2>Producto 9</h2>
-                <p>Descripción del Producto 9.</p>
-            </div>
-            <div class="producto">
-                <img src="../MEDIA/PlaceholderLC.png" alt="Producto 5">
-                <h2>Producto 10</h2>
-                <p>Descripción del Producto 10.</p>
+        <p>La Tienda del Catatumbo es un tributo a la rica región colombiana del Catatumbo. Este paraíso tropical, ubicado en el noreste de Colombia, bañado por la cálida luz que danza en el río, cautiva con su belleza natural y su historia arraigada.
+            <br><br>
+            Nuestra tienda rinde homenaje a la diversa artesanía, sabores únicos y la vibrante cultura del Catatumbo. Ofrecemos productos elaborados a mano por talentosos artesanos locales, cada pieza es un tesoro que refleja la destreza y la tradición arraigada en esta región. Desde artesanías exquisitas hasta delicias culinarias, cada artículo cuenta una historia de herencia y creatividad.
+            <br><br>
+            Más allá de los productos, celebramos la cultura rica y variada del Catatumbo. La música resuena con ritmos autóctonos, las danzas capturan la alegría y el folclore, mientras que las tradiciones se entrelazan con la vida cotidiana. Cada producto en nuestra tienda es un eco de esta vibrante cultura, un tributo a las raíces que alimentan el alma de una región.
+            <br><br>
+            Te invitamos a explorar y descubrir la esencia del Catatumbo a través de nuestros productos. Cada compra no solo es un enlace con esta tierra encantada, sino también un apoyo directo a las comunidades que mantienen vivas estas tradiciones centenarias.
+            <br>
+        </p>
+        <div>
+            <h1>Lo más comprado</h1>
+            <div class="productos-grid">
+                <div class="producto">
+                    <img src="../MEDIA/PlaceholderLC.png" alt="Producto 1">
+                    <h2>Producto 1</h2>
+                    <p>Descripción del Producto 1.</p>
+                </div>
+                <div class="producto">
+                    <img src="../MEDIA/PlaceholderLC.png" alt="Producto 2">
+                    <h2>Producto 2</h2>
+                    <p>Descripción del Producto 2.</p>
+                </div>
+                <div class="producto">
+                    <img src="../MEDIA/PlaceholderLC.png" alt="Producto 3">
+                    <h2>Producto 3</h2>
+                    <p>Descripción del Producto 3.</p>
+                </div>
+                <div class="producto">
+                    <img src="../MEDIA/PlaceholderLC.png" alt="Producto 4">
+                    <h2>Producto 4</h2>
+                    <p>Descripción del Producto 4.</p>
+                </div>
+                <div class="producto">
+                    <img src="../MEDIA/PlaceholderLC.png" alt="Producto 5">
+                    <h2>Producto 5</h2>
+                    <p>Descripción del Producto 5.</p>
+                </div>
             </div>
         </div>
     </main>

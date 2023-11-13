@@ -1,14 +1,22 @@
+nav {
+    background-color: #3d2783ff;
+}
+nav ul li a {
+    font-size: 40px;
+}
 /* Estilos para el contenido principal */
 main {
-    text-align: center;
+    text-align: justify;
     padding: 20px;
     margin-top: 60px;
     margin-bottom: 60px;
 }
-
+h1{
+    text-align: center;
+}
 /* Estilos para el pie de página */
 footer {
-    background-color: #470063;
+    background-color: #3d2783ff;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
