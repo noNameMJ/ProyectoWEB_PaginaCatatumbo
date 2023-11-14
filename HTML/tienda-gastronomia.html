@@ -14,23 +14,25 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a href="../index.html" class="navbar-brand"><img src="../MEDIA/logo.png"></a>
-                </li>
-                <li class="nav-item">
-                    <a href="tienda.html" class="nav-link active">Tienda</a>
-                </li>
-                <li class="nav-item">
-                    <a href="cultura.html" class="nav-link active">Cultura</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about-us.html" class="nav-link active">Sobre Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a href="mi-cuenta.html"><i class="fas fa-user"></i></a>
-                </li>
-            </ul>
+            <div class="container-fluid">
+                <ul class="navbar-nav align-items-center w-100">
+                    <li class="nav-item">
+                        <a href="../index.html" class="navbar-brand"><img src="../MEDIA/logo.png" style="padding: 20px 0px;"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tienda.html" class="nav-link active">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cultura.html" class="nav-link active">Cultura</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about-us.html" class="nav-link active">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item ms-auto">
+                        <a href="mi-cuenta.html"><i class="fas fa-user" style="margin: 15px"></i></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         
         <ul class="sub-navbar">
@@ -52,5 +54,57 @@
             </li>
         </ul>
     </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-10">
+                    <div class="productos-grid">
+                        <div class="producto">
+                            <img src="../MEDIA/PlaceholderLC.png">
+                            <h2>Producto 1</h2>
+                            <p>Descripción del producto 1.</p>
+                        </div>
+                        <div class="producto">
+                            <img src="../MEDIA/PlaceholderLC.png" alt="Producto 2">
+                            <h2>Producto 2</h2>
+                            <p>Descripción del Producto 2.</p>
+                        </div>
+                        <div class="producto">
+                            <img src="../MEDIA/PlaceholderLC.png" alt="Producto 3">
+                            <h2>Producto 3</h2>
+                            <p>Descripción del Producto 3.</p>
+                        </div>
+                        <div class="producto">
+                            <img src="../MEDIA/PlaceholderLC.png" alt="Producto 4">
+                            <h2>Producto 4</h2>
+                            <p>Descripción del Producto 4.</p>
+                        </div>
+                        <div class="producto">
+                            <img src="../MEDIA/PlaceholderLC.png" alt="Producto 5">
+                            <h2>Producto 5</h2>
+                            <p>Descripción del Producto 5.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <h4>Categorías</h4>
+                    <li>
+                        <a>Café</a>
+                    </li>
+                    <li>
+                        <a>Cacao</a>
+                    </li>
+                    <li>
+                        <a>Piña</a>
+                    </li>
+                    <li>
+                        <a>Licor</a>
+                    </li>
+                </ul>
+                    <h4>Precio</h4>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

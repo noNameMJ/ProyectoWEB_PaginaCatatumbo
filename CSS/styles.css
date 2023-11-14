@@ -1,14 +1,17 @@
 nav {
     background-color: #3d2783ff;
+    padding: 1%;
 }
 nav ul li a {
     font-size: 40px;
+}
+.navbar-brand{
+    margin: 20px;
 }
 /* Estilos para el contenido principal */
 main {
     text-align: justify;
     padding: 20px;
-    margin-top: 60px;
     margin-bottom: 60px;
 }
 h1{
