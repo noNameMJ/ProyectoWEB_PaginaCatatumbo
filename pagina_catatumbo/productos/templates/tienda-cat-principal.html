@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extrahead %} 
+<title>Tienda</title>
+<link rel="stylesheet" href="{% static '/CSS/catalogo.css' %}">
+{% endblock extrahead %}
+    
+{% block extraheader %}
+<ul class="sub-navbar">
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'productosCategoria' %}?cat_principal=Arte">Arte</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'productosCategoria' %}?cat_principal=Artesania">Artesanía</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'productosCategoria' %}?cat_principal=Gastronomia">Gastronomía</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'productosCategoria' %}?cat_principal=Medicina_Tradicional">Medicina Tradicional</a>
+    </li>
+    <li class="search-bar">
+        <input type="text" id="search-input" placeholder="Buscar...">
+        <button id="search-button" class="search-icon" onclick="Buscar_Producto()"><i class="fas fa-search"></i></button>
+    </li>
+</ul>
+{% endblock extraheader %}
+
+{% block content %} 
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-10">
+            <div class="productos-grid">
+                {% for producto in page_obj %}
+                <div class="producto">
+                    <img src="{{ producto.imagen.url }}" class="card-img-top imagen_tarjeta" alt="Sin Imágen">
+                    <h2>{{ producto.nombre|upper }}</h2>
+                    <p>{{ producto.descripcion }}</p>
+                    
+                    <a href="{% url 'detalleProducto' producto.id %}" class="btn btn-primary">Detalles</a>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="pagination">
+                <span class="step-links">
+                    {% if page_obj.has_previous %}
+                        <a href="?page=1">&laquo; first</a>
+                        <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+                    {% endif %}
+            
+                    <span class="current">
+                        Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                    </span>
+            
+                    {% if page_obj.has_next %}
+                        <a href="?page={{ page_obj.next_page_number }}">next</a>
+                        <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                    {% endif %}
+                </span>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <h4>Categorías</h4>
+            <ul class="navbar-nav">
+            {% for categoria in categorias%}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'productosCategoria' %}?cat_principal={{categoria.ref_tipoproducto}}&cat_secundaria={{categoria.nombre}}">{{ categoria.nombre }}</a>
+                </li>
+            {% endfor %}
+            </ul><br>
+            <h4>Precio</h4>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+{% block extrajs %}
+<script>
+    let catPrincipal = "{{ categoria_principal }}";
+    let catSecundaria = "{{ categoria_secundaria }}";
+</script>
+<script>
+   let searchButton = document.getElementById('search-button');
+
+    function Buscar_Producto() {
+        // Obtener el valor del campo de búsqueda
+        let searchInput = document.getElementById('search-input');
+        let searchTerm = document.getElementById('search-input').value.trim();
+        
+        // Obtener valores de categoría directamente en la plantilla
+
+        // Redirigir a la URL deseada con el término de búsqueda y valores de categoría
+        window.location.href = "{% url 'productosCategoria' %}?cat_principal=" + encodeURIComponent(catPrincipal) + "&cat_secundaria=" + encodeURIComponent(catSecundaria) + "&search=" + encodeURIComponent(searchTerm);
+    }
+</script>
+{% endblock extrajs%}
