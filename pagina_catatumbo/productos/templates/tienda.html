@@ -20,10 +20,6 @@
     <li class="nav-item">
         <a class="nav-link" href="{% url 'productosCategoria' %}?cat_principal=Medicina_Tradicional">Medicina Tradicional</a>
     </li>
-    <li class="search-bar">
-        <input type="text" id="search-input" placeholder="Buscar...">
-        <button id="search-button" class="search-icon"><i class="fas fa-search"></i></button>
-    </li>
 </ul>
 {% endblock extraheader %}
 
@@ -45,7 +41,8 @@
                 <img src="{{ producto.imagen.url }}" class="card-img-top imagen_tarjeta" alt="Sin Imágen">
                 <h2>{{ producto.nombre|upper }}</h2>
                 <p>{{ producto.descripcion }}</p>
-        
+                
+                <a href="{% url 'agregarProducto' producto.id %}" class="btn btn-success">Comprar</a>
                 <a href="{% url 'detalleProducto' producto.id %}" class="btn btn-primary">Detalles</a>
             </div>
             {% endfor %}
