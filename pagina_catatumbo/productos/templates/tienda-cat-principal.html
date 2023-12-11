@@ -38,6 +38,7 @@
                     <h2>{{ producto.nombre|upper }}</h2>
                     <p>{{ producto.descripcion }}</p>
                     
+                    <a href="{% url 'agregarProducto' producto.id %}" class="btn btn-success">Comprar</a>
                     <a href="{% url 'detalleProducto' producto.id %}" class="btn btn-primary">Detalles</a>
                 </div>
                 {% endfor %}

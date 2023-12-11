@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extrahead %} 
+<title>Mi Cuenta</title>
+{% endblock extrahead %}
+
+{% block content %} 
+<h1>Bienvenido a tu cuenta, {{ usuario.username }}!</h1>
+
+
+<p>Correo Electrónico: {{ usuario.email }}</p>
+<p>Nombre: {{ usuario.first_name }} {{ usuario.last_name }}</p>
+
+
+
+<a href="{% url 'logout' %}">Cerrar sesión</a>
+{% endblock content %} 
